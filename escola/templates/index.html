@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Escola Search</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #09061a;
+            color: white;
+        }
+
+        header {
+            width: 100%;
+            padding: 20px;
+            background: linear-gradient(90deg, #09061a, #433c82);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+    
+        .logo-area { 
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .search-input {
+            padding: 10px;
+            width: 300px;
+            border-radius: 8px;
+            border: none;
+        }
+
+        .search-btn {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .titulo {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .texto {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .sobre-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 300px;
+            background-color: #1a1733;
+            padding: 20px;
+            border-radius: 12px;
+        }
+
+        .icone {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+
+        .card h2 {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo-area">
+
+        <div class="logo">
+            ESCOLA SEARCH
+        </div>
+
+        <div class="search-header">
+            <input
+                type="text"
+                class="search-input"
+                placeholder="Pesquisar escola, cidade ou edital...">
+
+            <button class="search-btn">
+                🔍
+            </button>
+        </div>
+
+    </div>
+
+    <nav>
+        <a href="#">ⓘ Sobre</a>
+        <a href="#">📄 Editais</a>
+        <a href="#">📅 Prazos</a>
+        <a href="#">❔ FAQ</a>
+        <a href="#" class="suporte">🎧 Suporte</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <h1 class="titulo">Bem-vindo ao Escola Search</h1>
+
+    <p class="texto">
+        Encontre informações sobre matrícula escolar, documentos necessários,
+        editais, prazos e dúvidas frequentes.
+    </p>
+
+    <section class="sobre-container">
+
+        <div class="card">
+            <div class="icone">👥</div>
+
+            <h2>Sobre Nós</h2>
+
+            <p>
+                Somos um facilitador de matrículas, dedicados a centralizar
+                dados públicos oficiais e tornar a busca por vagas mais simples.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="icone">🌐</div>
+
+            <h2>Sobre o Site</h2>
+
+            <p>
+                O Escola Search utiliza tecnologia para organizar e disponibilizar
+                informações de forma rápida e intuitiva.
+            </p>
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+</html>
