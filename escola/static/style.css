@@ -1,0 +1,153 @@
+.formulario-nome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.formulario-nome input {
+    width: 300px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.formulario-nome button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    background-color: #433c82;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.formulario-nome button:hover {
+    background-color: #5a51a0;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #09061a;
+    color: white;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(90deg, #09061a, #433c82);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 8px;
+    border: none;
+}
+
+.search-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.texto {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.sobre-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    background-color: #1a1733;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.icone {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.prazos-container {
+    margin-top: 80px;
+}
+
+.prazos-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #09061a;
+}
+
+.prazo-card {
+    background: white;
+    color: #09061a;
+    padding: 20px;
+    margin: 15px auto;
+    max-width: 500px;
+    border-left: 5px solid #1d6882;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background: #09061a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 80px;
+}

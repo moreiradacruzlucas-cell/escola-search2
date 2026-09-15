@@ -3,133 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Escola Search</title>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        body {
-            background-color: #09061a;
-            color: white;
-        }
-
-        header {
-            width: 100%;
-            padding: 20px;
-            background: linear-gradient(90deg, #09061a, #433c82);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 28px;
-            font-weight: bold;
-        }
-
-    
-        .logo-area { 
-            display: flex;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .search-input {
-            padding: 10px;
-            width: 300px;
-            border-radius: 8px;
-            border: none;
-        }
-
-        .search-btn {
-            padding: 10px 15px;
-            border: none;
-            border-radius: 8px;
-            cursor: pointer;
-        }
-
-        nav {
-            display: flex;
-            gap: 20px;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-        }
-
-        main {
-            padding: 40px;
-            text-align: center;
-        }
-
-        .titulo {
-            font-size: 40px;
-            margin-bottom: 20px;
-        }
-
-        .texto {
-            font-size: 18px;
-            margin-bottom: 40px;
-        }
-
-        .sobre-container {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            width: 300px;
-            background-color: #1a1733;
-            padding: 20px;
-            border-radius: 12px;
-        }
-
-        .icone {
-            font-size: 50px;
-            margin-bottom: 15px;
-        }
-
-        .card h2 {
-            margin-bottom: 15px;
-        }
-        .prazos-container {
-    margin-top: 80px;
-}
-
-.prazos-container h2 {
-    text-align: center;
-    margin-bottom: 30px;
-    color: #09061a;
-}
-
-.prazo-card {
-    background: white;
-    padding: 20px;
-    margin: 15px auto;
-    max-width: 500px;
-    border-left: 5px solid #1d6882;
-    border-radius: 8px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-}
-        footer {
-    background: #09061a;
-    color: white;
-
-    text-align: center;
-
-    padding: 30px;
-
-    margin-top: 80px;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 
 <body>
@@ -141,7 +18,6 @@
         <div class="logo">
             ESCOLA SEARCH
         </div>
-
         <div class="search-header">
             <input
                 type="text"
@@ -167,7 +43,7 @@
 
 <main>
 
-    <h1 class="titulo">Bem-vindo ao Escola Search</h1>
+    <h1>Bem-vindo, {{ nome }}!</h1> <h1 class="titulo"> Ao Escola Search</h1>
 
     <p class="texto">
         Encontre informações sobre matrícula escolar, documentos necessários,
@@ -199,27 +75,30 @@
         </div>
 
     </section>
-<section class="prazos-container">
 
-    <h2>Prazos Importantes</h2>
+    <section class="prazos-container">
 
-    <div class="prazo-card">
-        <h3>Início das Inscrições</h3>
-        <p>01/10/2026</p>
-    </div>
+        <h2>Prazos Importantes</h2>
 
-    <div class="prazo-card">
-        <h3>Fim das Inscrições</h3>
-        <p>31/10/2026</p>
-    </div>
+        <div class="prazo-card">
+            <h3>Início das Inscrições</h3>
+            <p>01/10/2026</p>
+        </div>
 
-    <div class="prazo-card">
-        <h3>Resultado</h3>
-        <p>15/11/2026</p>
-    </div>
+        <div class="prazo-card">
+            <h3>Fim das Inscrições</h3>
+            <p>31/10/2026</p>
+        </div>
 
-</section>
+        <div class="prazo-card">
+            <h3>Resultado</h3>
+            <p>15/11/2026</p>
+        </div>
+
+    </section>
+
 </main>
+
 <footer>
 
     <div>
@@ -231,5 +110,6 @@
     </div>
 
 </footer>
+
 </body>
 </html>
