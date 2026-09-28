@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Prazos - Escola Search</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo-area">
+
+        <a href="{{ url_for('inicio') }}" class="logo">
+            ESCOLA SEARCH
+        </a>
+
+        <form action="{{ url_for('editais') }}" method="GET" class="search-header">
+
+            <input
+                type="text"
+                name="pesquisa"
+                class="search-input"
+                placeholder="Pesquisar escola, cidade ou edital...">
+
+            <button type="submit" class="search-btn">
+                🔍
+            </button>
+
+        </form>
+
+    </div>
+
+    <nav>
+        <a href="{{ url_for('sobre') }}">ⓘ Sobre</a>
+        <a href="{{ url_for('editais') }}">📄 Editais</a>
+        <a href="{{ url_for('prazos') }}">📅 Prazos</a>
+        <a href="{{ url_for('faq') }}">❔ FAQ</a>
+        <a href="{{ url_for('suporte') }}">🎧 Suporte</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <h1 class="titulo">📅 Prazos importantes</h1>
+
+    <p class="texto">
+        Confira as principais datas relacionadas às matrículas escolares.
+    </p>
+
+    <div class="prazos-container">
+
+        <div class="prazo-card">
+            <h2>Período de Matrícula</h2>
+            <p>Confira o período definido para realizar a matrícula.</p>
+        </div>
+
+        <div class="prazo-card">
+            <h2>Transferência</h2>
+            <p>Confira as datas para solicitação de transferência.</p>
+        </div>
+
+        <div class="prazo-card">
+            <h2>Vagas Remanescentes</h2>
+            <p>Confira as datas para consultar vagas disponíveis.</p>
+        </div>
+
+    </div>
+
+</main>
+
+</body>
+</html>

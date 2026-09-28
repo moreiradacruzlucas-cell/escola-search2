@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FAQ - Escola Search</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo-area">
+
+        <a href="{{ url_for('inicio') }}" class="logo">
+            ESCOLA SEARCH
+        </a>    
+
+        <form action="{{ url_for('editais') }}" method="GET" class="search-header">
+
+            <input
+                type="text"
+                name="pesquisa"
+                class="search-input"
+                placeholder="Pesquisar escola, cidade ou edital...">
+
+            <button type="submit" class="search-btn">
+                🔍
+            </button>
+
+        </form>
+
+    </div>
+
+    <nav>
+        <a href="{{ url_for('sobre') }}">ⓘ Sobre</a>
+        <a href="{{ url_for('editais') }}">📄 Editais</a>
+        <a href="{{ url_for('prazos') }}">📅 Prazos</a>
+        <a href="{{ url_for('faq') }}">❔ FAQ</a>
+        <a href="{{ url_for('suporte') }}">🎧 Suporte</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <h1 class="titulo">❔ Perguntas Frequentes</h1>
+
+    <p class="texto">
+        Confira as respostas para as principais dúvidas sobre matrícula escolar.
+    </p>
+
+    <div class="sobre-container">
+
+        <div class="card">
+            <h2>Como faço minha matrícula?</h2>
+            <p>
+                Consulte os editais e os prazos disponíveis no Escola Search.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Quais documentos são necessários?</h2>
+            <p>
+                Os documentos necessários podem ser encontrados nas informações do edital.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Onde encontro os editais?</h2>
+            <p>
+                Acesse a página de Editais pelo menu acima.
+            </p>
+        </div>
+
+    </div>
+
+</main>
+
+</body>
+</html>

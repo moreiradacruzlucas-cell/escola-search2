@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Entrada - Escola Search</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo-area">
+
+        <a href="{{ url_for('inicio') }}" class="logo">
+            ESCOLA SEARCH
+        </a>
+
+    </div>
+
+</header>
+
+<main class="entrada">
+
+    <h1 class="titulo">
+        Bem-vindo ao Escola Search!
+    </h1>
+
+    <p class="texto">
+        Para começar, digite seu nome.
+    </p>
+
+    <form method="POST" class="formulario-nome">
+
+        <input
+            type="text"
+            name="nome"
+            placeholder="Digite seu nome"
+            required>
+
+        <button type="submit">
+            Entrar
+        </button>
+
+    </form>
+
+    <div class="sobre-container">
+
+        <div class="card">
+            <h2>Sobre Nós</h2>
+
+            <p>
+                O Escola Search foi criado para facilitar
+                o acesso às informações sobre matrícula escolar.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Sobre o Site</h2>
+
+            <p>
+                Encontre informações sobre editais, prazos,
+                documentos e dúvidas frequentes.
+            </p>
+        </div>
+
+    </div>
+
+</main>
+
+</body>
+
+</html>

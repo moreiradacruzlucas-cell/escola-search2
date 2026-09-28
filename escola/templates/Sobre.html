@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sobre - Escola Search</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo-area">
+
+        <a href="{{ url_for('inicio') }}" class="logo">
+            ESCOLA SEARCH
+        </a>
+
+        <div class="search-header">
+            <input
+                type="text"
+                class="search-input"
+                placeholder="Pesquisar escola, cidade ou edital...">
+
+            <button class="search-btn">
+                🔍
+            </button>
+        </div>
+
+    </div>
+
+    <nav>
+        <a href="{{ url_for('sobre') }}">ⓘ Sobre</a>
+        <a href="{{ url_for('editais') }}">📄 Editais</a>
+        <a href="{{ url_for('prazos') }}">📅 Prazos</a>
+        <a href="{{ url_for('faq') }}">❔ FAQ</a>
+        <a href="{{ url_for('suporte') }}">🎧 Suporte</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <h1 class="titulo">Sobre o Escola Search</h1>
+
+    <p class="texto">
+        O Escola Search é um site criado para facilitar o acesso
+        às informações sobre matrícula escolar.
+    </p>
+
+</main>
+
+</body>
+</html>
